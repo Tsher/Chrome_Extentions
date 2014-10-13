@@ -27,7 +27,6 @@ function getChannelData(){
                         $("#lbamount").text(33);
                         $("#lbrevenue").text(3333);
                         $(".txtcontent").text(msg);
-                        alert(strdate);
                  }
         });
 }
