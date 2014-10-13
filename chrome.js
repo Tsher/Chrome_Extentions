@@ -15,16 +15,18 @@ function getChannelData(){
         //         console.log(log);
         // });
         // return false;
+        var strdate = document.getElementById("goodplugin").value;
+
         $.ajax({
                 url: "http://www.baidu.com",
                 xhrFields: { withCredentials: true },
                 type: "GET",
                 data: {},
                 success: function(msg) {
-                        $("#lbdate").text('2014-10-12');
+                        $("#lbdate").text(strdate);
                         $("#lbamount").text(33);
                         $("#lbrevenue").text(3333);
-                        $(".txtcontent").text('ok!');
+                        $(".txtcontent").text(msg);
                  }
         });
 }
