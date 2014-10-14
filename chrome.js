@@ -16,9 +16,9 @@ function getChannelData(){
         // });
         // return false;
         var strdate = document.getElementById("goodplugin").value;
-
+        var date = new Date();
         $.ajax({
-                url: "http://www.baidu.com",
+                url: "http://www.baidu.com?qversion="+ date.getMilliseconds(),
                 xhrFields: { withCredentials: true },
                 type: "GET",
                 data: {},

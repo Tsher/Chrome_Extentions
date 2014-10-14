@@ -1,0 +1,8 @@
+.left-promotion {
+position: fixed;
+_position: absolute;
+cursor: pointer;
+width: 155px;
+height: 200px;
+overflow: hidden;
+}
